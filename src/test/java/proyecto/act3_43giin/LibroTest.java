@@ -31,25 +31,33 @@ public class LibroTest {
      */
     @Test
     public void testGetTitulo() {
-        assertEquals("EL camino de los reyes", libro.getTitulo());
+        assertEquals("El camino de los reyes", libro.getTitulo());
     }
-  
+    /**
+     * Test del método GetAutor de la clase Libro
+     */
     @Test
     public void testGetAutor() {
         assertEquals("Brandon Sanderson", libro.getAutor());
     }
-  
+     /**
+     * Test del método EstaDisponible de la clase Libro
+     */
     @Test
     public void testEstaDisponible() {
         assertTrue(libro.estaDisponible());
     }
-  
+     /**
+     * Test del método Prestar de la clase Libro
+     */
     @Test
     public void testPrestar() {
         libro.prestar();
         assertFalse(libro.estaDisponible());
     }
-  
+     /**
+     * Test del método devolver de la clase Libro
+     */
     @Test
     public void testDevolver() {
 
